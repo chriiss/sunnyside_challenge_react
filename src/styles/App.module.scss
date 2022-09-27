@@ -1,0 +1,8 @@
+@use "./mixins.scss" as mixin;
+
+@include mixin.resetStyle;
+@include mixin.navStyle;
+@include mixin.sectionOneStyle;
+@include mixin.sectionTwoStyle;
+@include mixin.sectionThreeStyle;
+@include mixin.footerStyle;
