@@ -8,7 +8,7 @@ const SectionOne = () => {
         <section>
             <div className={Styles.bg_img}>
                 <h1 className={Styles.uppercase}>{sectionOneData.title}</h1>
-                <img src={logoArrow} alt="logo arrow down"/>
+                <a href="#sectionTwo"><img src={logoArrow} alt="logo arrow down"/></a>
             </div>
         </section>
     )

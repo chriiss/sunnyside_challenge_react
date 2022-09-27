@@ -9,7 +9,7 @@ const SectionTwo = () => {
     const dataSectionTwo = DataJson.sectionTwoComponent;
     return(
         <section>
-           <div className={Styles.sectionTwo_container}>
+           <div id="sectionTwo" className={Styles.sectionTwo_container}>
                 <div className={Styles.sectionTwo_container_bloc}>
                     <h2>{dataSectionTwo.blocOne.title}</h2>
                     <p>{dataSectionTwo.blocOne.paragraph}</p>

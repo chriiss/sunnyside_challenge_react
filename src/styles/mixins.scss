@@ -4,6 +4,7 @@
     html, body {
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
     li {
         list-style-type: none;
@@ -87,7 +88,7 @@
         }
         &_list {
             display: flex;
-            gap: 5rem;
+            gap: 3.75rem;
             justify-content: flex-end;
 
 
@@ -152,6 +153,47 @@
         img {
             width: 50px;
             height: 190px;
+            animation: bounceAnim 2s ease 0s infinite alternate none;
+            -webkit-animation: bounceAnim 2s ease 0s infinite alternate none;
+        }
+
+        @keyframes bounceAnim {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 1;
+                transform: translateY(-45px);
+            }
+            24% {
+                opacity: 1;
+            }
+            40% {
+                animation-timing-function: ease-in;
+                transform: translateY(-24px);
+            }
+            65% {
+                animation-timing-function: ease-in;
+                transform: translateY(-12px);
+            }
+            82% {
+                animation-timing-function: ease-in;
+                transform: translateY(-6px);
+            }
+            93% {
+                animation-timing-function: ease-in;
+                transform: translateY(-4px);
+            }
+            25%,
+            55%,
+            75%,
+            87% {
+                animation-timing-function: ease-out;
+                transform: translateY(0px);
+            }
+            100% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0px);
+            }
         }
     }
 }
