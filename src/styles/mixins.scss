@@ -126,8 +126,10 @@
             }
         }
         &_list_show {
-            display: block;
-            text-align: center;
+            @media(max-width: var.$breakpoint_tablet) {
+                display: block;
+                text-align: center;
+            }
         }
     }
 }
